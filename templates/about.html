@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+		<title>About-Archkönnect</title>
+	</head>
+	<body>
+		<div style="margin: 20px; font-family: Helvetica;">
+    		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="font-family: 'Archivo Black'">
+	        	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+	            	<span class="navbar-toggler-icon"></span>
+	        	</button>
+		    	<img class="navbar-brand image-invert" width="100px" height="100px"src="{{url_for('static', filename='logo_LI.jpg')}}">
+		    	<span class="navbar-brand" style="font-size: 40px">ARCHKONNECT</span>
+	        	<div class="navbar-nav ml-auto" id="navbarCollapse">
+	            	<div class="navbar-nav">
+	                	<a href="index.html" class="nav-item nav-link">Home</a>
+	                	<a href="#" class="nav-item nav-link active">About Us</a>
+	                	<a href="#" class="nav-item nav-link">Contact Us</a>
+	                	<a href="subscribe.html" class="nav-item nav-link">Subscribe</a>
+	               	</div>
+	        	</div>
+	    	</nav></br></br>
+			</div>
+			<div class="container-fluid">
+			   	<div class="row justify-content-center">
+			  		<div class="mx-auto text-center"></br></br></br>
+			   			<h2>Webpage Designer</h2></br>
+			   			<a href="https://www.instagram.com/dhineshcarlsen/"><img id="dinu" src="{{url_for('static', filename='me.jpg')}}" class="h-10 d-inline-block w-25 p-25 shadow-lg p-3 mb-5 bg-white rounded"></a></br>
+			   			<p>Click on the image to view the instagram page</p>
+			   			<p>Dhinesh GV (BE Computer Science & Engineering)</p>
+			   			<a href="https://www.fiverr.com/share/9dQw5j">https://www.fiverr.com/share/9dQw5j</a>
+			   			<p>Visit the above website if you need any projects</br>to be done based on android application,</br>websites and blogs and Machine Learning</br>at low cost</p>
+			   			<a href="https://www.linkedin.com/in/dhinesh-carlsen-b23b23192/">Click here to view LinkedIn profile</a> 
+			   			<hr class="bg-dark">
+			   			<h2>Content Creator</h2>
+			   			<a href="https://www.instagram.com/roopendra.kumar.prabhakaran/"><img id="roop" src="{{url_for('static', filename='ME.png')}}" class="h-10 d-inline-block w-25 p-25 shadow-lg p-3 mb-5 bg-white rounded"></a>
+			   			<p>Click on the image to view the instagram page</p>
+			   			<p>Roopendra Kumar P (B Arch)</p>
+		   			</div>
+		   		</div>
+		   	</div>
+		</div>
+	</body>
+</html>

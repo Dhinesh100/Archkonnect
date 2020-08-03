@@ -1,0 +1,28 @@
+.navbar-sample {
+    margin: 20px;
+    font-family: Helvetica;
+}
+
+.rounded {
+ 	border-radius: 10px;
+}
+
+.contain {
+	margin-left: 50px;
+}
+
+.btn-submit {
+	background-color: red;
+	color: white;
+	height: 50px;
+}
+
+.image-invert {
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1);
+  	transform: rotate(360deg);
+}
+
+.tarea {
+	height: 70%;
+}

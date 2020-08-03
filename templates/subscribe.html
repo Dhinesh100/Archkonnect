@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+		<title>Subscribe-Archkönnect</title>
+	</head>
+
+	<body>
+		<div style="margin: 20px; font-family: Helvetica;">
+    		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="font-family: 'Archivo Black'">
+	        	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+	            	<span class="navbar-toggler-icon"></span>
+	        	</button>
+		    	<img class="navbar-brand image-invert" width="100px" height="100px"src="{{url_for('static', filename='logo_LI.jpg')}}">
+		    	<span class="navbar-brand" style="font-size: 40px">ARCHKONNECT</span>
+	        	<div class="navbar-nav ml-auto" id="navbarCollapse">
+	            	<div class="navbar-nav">
+	                	<a href="index.html" class="nav-item nav-link">Home</a>
+	                	<a href="about.html" class="nav-item nav-link">About Us</a>
+	                	<a href="#" class="nav-item nav-link">Contact Us</a>
+	                	<a href="" class="nav-item nav-link active">Subscribe</a>
+	               	</div>
+	        	</div>
+	    	</nav></br></br>
+			</div>
+				<div class="container-fluid">
+			   		<div class="row justify-content-center">
+			  			<div class="mx-auto"></br></br>
+			   				<h2>Fill The Details</h2>
+			   				<hr>
+			   				{% if error1 %}
+        					<p style="color: red"><strong>{{ error1 }}</br>{{ error2 }}</strong>
+      						{% endif %}
+      						{% if snackbar %}				 
+	   						<p style="color: green"><strong>{{ snackbar }}</strong>
+      						{% endif %}
+			   				{% block content %}
+			   				<form method='POST'>
+			   					<label id="lab1" for="name">&nbspName<span style="color: red">*</span></label></br>
+								<input class="w-100 p-1 rounded" maxlength="50" name="name" id="name" type="text" value="{{ name }}" placeholder="Your answer..."	/>
+								{% if nameerr %}
+        						<p style="color: red"><small>{{ nameerr }}</small></p>
+        						{% else %}
+        						</br></br>
+      							{% endif %}
+								<label id="lab2" for="email">&nbspEmail<span style="color: red">*</span></label></br>
+								<input class="w-100 p-1 rounded" name="email" id="email" type="text" value="{{ email }}" placeholder="Your answer..." />
+								{% if emailerr %}
+        						<p style="color: red"><small>{{ emailerr }}</small></p>
+        						{% else %}
+        						</br></br>
+      							{% endif %}
+								<input class="btn-btn-submit rounded btn-submit w-100 p-1" type="submit" value="Subscribe"/></br></br>
+							</form>			
+							{% endblock %}
+			   			</div>
+		   			</div>
+		   		</div>
+		   </div>
+		</div>
+	</body>
+</html>
