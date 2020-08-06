@@ -15,17 +15,11 @@ protobuf==3.12.2
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycryptodome==3.4.3
-pypiwin32==223
-PyQt5==5.13.0
-PyQt5-sip==12.7.0
-pyqt5-tools==5.13.0.1.5
 Pyrebase==3.0.27
 python-dotenv==0.10.5
 python-jwt==2.0.1
-pywin32==228
 requests==2.11.1
 requests-toolbelt==0.7.0
 rsa==4.6
 six==1.15.0
 Werkzeug==0.16.0
-win10toast==0.9
